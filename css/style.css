@@ -1,0 +1,145 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@500&family=Source+Code+Pro:ital,wght@1,200&display=swap');
+
+/* VARIABLES */
+:root{
+    /* Fuentes */
+    --fuente-titulos:'Roboto', cursive;
+    --fuente-textos:'Open+Sans';
+    --fuente-titulos2:'Edu TAS Beginner'
+    --fuente-textos:'Josefin Sans';
+
+    /* Colores */
+    --color-alpha:#6499E9;
+    --color-bravo:#9EDDFF;
+    --color-charlie:#A6F6FF;
+    --color-delta:#BEFFF7;
+    --color-echo:#0F0F0F;
+    --color-foxtrox:232D3F;
+    --color-golf:#005B41;
+    --color-hotel:#008170;
+
+}
+
+/* Normalize */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: var(--color-bravo);
+}
+
+.titulos{
+    font-family:var(--fuente-titulos2);
+    font-size: 3.5rem;
+    text-align: center;
+    color:black;
+}
+
+header{
+
+    background-color:--color-delta;
+    margin: 50px;;
+    margin-bottom: 50px;
+    padding: 20px 25px 20px 25px;
+    width: 100%;
+    height: 10vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    text-align: center;
+    width:fit-content
+    
+}
+
+header h1{ background-color: bisque;
+        margin-left:auto;
+        padding:auto;
+        text-align: center;
+
+}
+
+/* .flex-container{
+    height: 100vh;
+    background-color:radial-gradient(circle farthest-corner at 10% 20% rgba (37,145,251,0.98)0.1% rgba(0,7,128,1)99.8%);
+    height: 50vh;
+    display: flex;
+    flex-direction:row;
+    /* justify-content:space-evenly; */ /* ubicacion de los cajones, evelyn mismo espacio a los lados, center,, space-betwen abarca todo espacio */
+/*  Si quiero ubicar las cajas al final es align-items:flex-end; */
+
+.container{
+    width: 100%;
+    height: 600px;
+    position: relative;
+    background: url(https://t3.ftcdn.net/jpg/05/85/86/44/360_F_585864419_kgIYUcDQ0yiLOCo1aRjeu7kRxndcoitz.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #0F0F0F;
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+    border: 1px solid yellow;
+    display: inline-block;
+}
+
+.container .box:nth-child(1){
+    background-color: blue;
+    position: relative;
+    left: 10px;
+    top: 10px;
+    text-align: center;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.container .box:nth-child(2){
+    background-color: red;
+    position: absolute;
+    padding-right: 15px;
+    bottom: 10px;
+    right: 10px;
+    top: 10px;
+    text-overflow: clip;
+    border-radius: 30px;
+    text-align: center;
+
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    
+}
+
+.container .box:nth-child(3){
+    background-color:violet;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    border-radius: 30px;
+    text-align: center;
+
+    display: flex;
+    justify-content:flex-end
+}
+
+
+.container .box:nth-child(4){
+    background-color: burlywood;
+    position: absolute;
+    padding-right: 15px;
+    bottom: 10px;
+    right: 10px;
+    text-overflow: clip;
+
+    display: flex;
+    justify-content:flex-end
+}
